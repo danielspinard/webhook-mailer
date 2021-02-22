@@ -11,4 +11,6 @@ The webhook mailer, as the name implies, was developed with webhooks with reques
 coming soon.
 
 ### Composer installation
-coming soon.
+```php
+echo 'coming soon.';
+```
