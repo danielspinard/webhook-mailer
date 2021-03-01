@@ -1,0 +1,29 @@
+{
+  "name": "danielspinard/webhook-mailer",
+  "description": "Replace sluggish e-mail services, send webhooks like e-mail.",
+  "type": "library",
+  "keywords": [
+    "log",
+    "discord",
+    "webhook",
+    "mailer",
+    "email"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/danielspinard/webhook-mailer",
+  "authors": [
+    {
+      "name": "Daniel Monteiro",
+      "homepage": "https://github.com/danielspinard"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "guzzlehttp/guzzle": "7.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "WebhookMailer\\": "src"
+    }
+  }
+}
