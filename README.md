@@ -21,6 +21,6 @@ We will soon have a performance comparison.
 ![webhook mailer preview](https://i.imgur.com/jvtNXbU.png)
 
 ### Composer installation
-```php
-echo 'coming soon.';
+```
+composer require danielspinard/webhook-mailer
 ```
