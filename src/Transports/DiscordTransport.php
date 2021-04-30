@@ -27,6 +27,42 @@ class DiscordTransport implements TransportInterface
     }
 
     /**
+     * @return array
+     */
+    private function content(): array
+    {
+        return [
+            'username' => 'danielspinard/webhook-mailer',
+            'content' => '@here new contact e-mail received!',
+            'avatar_url' => null,
+            'tts' => false,
+            'embeds' => [[
+                'title' => null,
+                'description' => null,
+                'timestamp' => (new Datetime)->format(DateTime::ATOM),
+                'url' => null,
+                'color' => hexdec('8F33FE'),
+                'author' => [
+                    'name' => null,
+                    'url' => null,
+                    'icon_url' => null,
+                ],
+                'image' => [
+                    'url' => null,
+                ],
+                'thumbnail' => [
+                    'url' => null,
+                ],
+                'fields' => $this->fields,
+                'footer' => [
+                    'text' => 'danielspinard/webhook-mailer',
+                    'icon_url' => null,
+                ],
+            ]],
+        ];
+    }
+
+    /**
      * @param string $name
      * @param string $value
      * @return TransportInterface
